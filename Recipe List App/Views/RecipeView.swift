@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct RecipeView: View {
-    @EnvironmentObject var model: RecipeModel
     @State private var selectedTab = 0
     
     var body: some View {

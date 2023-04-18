@@ -59,8 +59,7 @@ struct RecipeFeaturedView: View {
                 
                 Text("Highlights")
                     .font(Font.custom("Avenir Heavy", size: 16))
-                Text("Vegetarian, Healthy, Easy clean-up")
-                    .font(Font.custom("Avenir", size: 15))
+                RecipeHighlightsView(highlights: model.recipes[selectedTabIndex].highlights)
             }
             .padding(.horizontal)
         }

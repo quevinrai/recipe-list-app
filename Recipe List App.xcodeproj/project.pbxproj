@@ -16,6 +16,11 @@
 		DE44B83129EDCD2100982D85 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE44B83029EDCD2000982D85 /* Constants.swift */; };
 		DE44B83329EE3BA600982D85 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE44B83229EE3BA600982D85 /* RecipeModel.swift */; };
 		DE99462A29EEE1BD00586A23 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99462929EEE1BD00586A23 /* Recipe.swift */; };
+		DE99462C29EF0A5800586A23 /* RecipeFeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99462B29EF0A5800586A23 /* RecipeFeaturedView.swift */; };
+		DE99462E29EF0A6C00586A23 /* RecipeCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99462D29EF0A6C00586A23 /* RecipeCategoryView.swift */; };
+		DE99463029EF0A8000586A23 /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99462F29EF0A8000586A23 /* RecipeListView.swift */; };
+		DE99463229EF0AB000586A23 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99463129EF0AB000586A23 /* RecipeDetailView.swift */; };
+		DE99463429EF0D6000586A23 /* RecipeHighlightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99463329EF0D6000586A23 /* RecipeHighlightsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,11 @@
 		DE44B83029EDCD2000982D85 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DE44B83229EE3BA600982D85 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
 		DE99462929EEE1BD00586A23 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		DE99462B29EF0A5800586A23 /* RecipeFeaturedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFeaturedView.swift; sourceTree = "<group>"; };
+		DE99462D29EF0A6C00586A23 /* RecipeCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCategoryView.swift; sourceTree = "<group>"; };
+		DE99462F29EF0A8000586A23 /* RecipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListView.swift; sourceTree = "<group>"; };
+		DE99463129EF0AB000586A23 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		DE99463329EF0D6000586A23 /* RecipeHighlightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeHighlightsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +95,11 @@
 			isa = PBXGroup;
 			children = (
 				DE44B81A29EDC71600982D85 /* RecipeView.swift */,
+				DE99462B29EF0A5800586A23 /* RecipeFeaturedView.swift */,
+				DE99462D29EF0A6C00586A23 /* RecipeCategoryView.swift */,
+				DE99462F29EF0A8000586A23 /* RecipeListView.swift */,
+				DE99463129EF0AB000586A23 /* RecipeDetailView.swift */,
+				DE99463329EF0D6000586A23 /* RecipeHighlightsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,9 +209,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE44B81B29EDC71600982D85 /* RecipeView.swift in Sources */,
+				DE99463229EF0AB000586A23 /* RecipeDetailView.swift in Sources */,
 				DE44B82F29EDCC9C00982D85 /* Rational.swift in Sources */,
 				DE44B83329EE3BA600982D85 /* RecipeModel.swift in Sources */,
+				DE99462C29EF0A5800586A23 /* RecipeFeaturedView.swift in Sources */,
+				DE99462E29EF0A6C00586A23 /* RecipeCategoryView.swift in Sources */,
 				DE99462A29EEE1BD00586A23 /* Recipe.swift in Sources */,
+				DE99463429EF0D6000586A23 /* RecipeHighlightsView.swift in Sources */,
+				DE99463029EF0A8000586A23 /* RecipeListView.swift in Sources */,
 				DE44B81929EDC71600982D85 /* Recipe_List_App.swift in Sources */,
 				DE44B83129EDCD2100982D85 /* Constants.swift in Sources */,
 			);

@@ -11,13 +11,9 @@ struct RecipeView: View {
     @EnvironmentObject var model: RecipeModel
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView {
+            
         }
-        .padding()
     }
 }
 

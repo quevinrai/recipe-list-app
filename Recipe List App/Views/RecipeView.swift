@@ -9,10 +9,33 @@ import SwiftUI
 
 struct RecipeView: View {
     @EnvironmentObject var model: RecipeModel
+    @State private var selectedTab = 0
     
     var body: some View {
-        TabView {
+        TabView(selection: $selectedTab) {
+            RecipeFeaturedView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "star.fill")
+                        Text("Featured")
+                    }
+                }.tag(0)
             
+            RecipeCategoryView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "square.grid.2x2")
+                        Text("Featured")
+                    }
+                }.tag(1)
+            
+            RecipeListView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "list.bullet")
+                        Text("Featured")
+                    }
+                }.tag(2)
         }
     }
 }

@@ -11,11 +11,19 @@ class RecipeModel: ObservableObject {
     // MARK: - Properties
     
     @Published var recipes = [Recipe]()
+    @Published var categories = Set<String>()
+    @Published var selectedCategory: String?
     
     // MARK: - Initialization
     
     init() {
         self.recipes = getData()
+        
+        self.categories = Set(self.recipes.map { r in
+            r.category
+        })
+        
+        self.categories.update(with: Constants.defaultListFilter)
     }
     
     // MARK: - Methods

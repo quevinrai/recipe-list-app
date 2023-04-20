@@ -20,7 +20,7 @@ struct RecipeView: View {
                     }
                 }.tag(0)
             
-            RecipeCategoryView()
+            RecipeCategoryView(selectedTab: $selectedTab)
                 .tabItem {
                     VStack {
                         Image(systemName: "square.grid.2x2")

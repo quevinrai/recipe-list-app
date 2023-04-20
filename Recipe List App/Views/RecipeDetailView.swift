@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct RecipeDetailView: View {
+    var id: UUID
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
@@ -15,6 +17,6 @@ struct RecipeDetailView: View {
 
 struct RecipeDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeDetailView()
+        RecipeDetailView(id: UUID())
     }
 }

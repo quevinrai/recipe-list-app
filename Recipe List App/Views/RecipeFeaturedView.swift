@@ -17,7 +17,6 @@ struct RecipeFeaturedView: View {
         VStack(alignment: .leading, spacing: 0) {
             TextTitleView(title: "Featured Recipes")
                 .padding(.horizontal)
-                .padding(.top, 40)
             
             GeometryReader { geo in
                 TabView(selection: $selectedTabIndex) {

@@ -10,6 +10,7 @@ import SwiftUI
 struct RecipeFeaturedView: View {
     @EnvironmentObject var model: RecipeModel
     @State var selectedTabIndex = 0
+    @State var isDetailViewShowing = false
     
     var body: some View {
         let featuredRecipes = model.recipes.filter { $0.featured }
@@ -22,7 +23,7 @@ struct RecipeFeaturedView: View {
                 TabView(selection: $selectedTabIndex) {
                     ForEach(0..<featuredRecipes.count, id: \.self) { index in
                         Button {
-                            
+                            self.isDetailViewShowing = true
                         } label: {
                             ZStack {
                                 Rectangle()
@@ -61,6 +62,10 @@ struct RecipeFeaturedView: View {
                 RecipeHighlightsView(highlights: model.recipes[selectedTabIndex].highlights)
             }
             .padding()
+        }
+        .sheet(isPresented: $isDetailViewShowing) {
+            // Show the Recipe Detail View
+            RecipeDetailView(recipe: featuredRecipes[selectedTabIndex])
         }
     }
 }

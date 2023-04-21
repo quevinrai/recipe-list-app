@@ -36,7 +36,7 @@ struct RecipeListView: View {
                 ScrollView {
                     LazyVStack(alignment: .leading) {
                         ForEach(recipes) { r in
-                            NavigationLink(value: r.id) {
+                            NavigationLink(value: r) {
                                 HStack {
                                     Image(r.image)
                                         .resizable()
@@ -57,8 +57,8 @@ struct RecipeListView: View {
                 }
             }
             .padding(.horizontal)
-            .navigationDestination(for: UUID.self) { id in
-                RecipeDetailView(id: id)
+            .navigationDestination(for: Recipe.self) { recipe in
+                RecipeDetailView(recipe: recipe)
             }
         }
     }
